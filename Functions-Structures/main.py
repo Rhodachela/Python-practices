@@ -3,10 +3,15 @@ from arithmetic_operations import perform_operation
 def main():  
     while True:
         print("Arithmetic operations")
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        operation = str(input("Enter the operation (add, subtract, multiply, divide): ")).strip().lower()
-         
+        try:
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+        except ValueError:
+            print("Enter a valid integer")
+            break
+            
+        operation = str(input("Enter the operation (add, subtract, multiply, divide): ")).strip().lower()  
+       
         if operation == "quit":
             print("Exiting the program. Goodbye!")
             break
