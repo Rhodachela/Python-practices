@@ -1,6 +1,6 @@
 #(a)
 print("DAYS OF THE WEEK")
-day = int(input("Enter the day of the week: "))
+day = input("Enter the day of the week: ")
 if day == 1:
     print("Hope you had a nice weekend.")
 elif day == 2:
@@ -42,3 +42,18 @@ elif unit == "F":
     print(f"The result is {celsius}°C")
 else:
     print("Invalid input!")
+
+#(c)
+rows = 5
+for i in range(1, 6):
+    print(" " * (rows - i), end="")
+    print(" *" * i)
+    
+#(d)
+import math
+number = int(input("Enter your number: "))
+
+square = number ** 2
+square_root = math.sqrt(number)
+print(f"The square of {number} is {square}")
+print(f"The square root of {number} is {square_root:.2f}")
