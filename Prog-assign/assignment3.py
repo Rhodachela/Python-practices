@@ -56,4 +56,4 @@ number = int(input("Enter your number: "))
 square = number ** 2
 square_root = math.sqrt(number)
 print(f"The square of {number} is {square}")
-print(f"The square root of {number} is {square_root:.2f}")
+print(f"The square root of {number} is {square_root:.2f}") 
