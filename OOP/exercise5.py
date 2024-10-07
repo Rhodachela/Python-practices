@@ -4,7 +4,7 @@ def check_value(number):
     if number > 100:
         raise ValueTooHighError(f"Error: The value {number} is too high. Try again!")
     else:
-        print(f"The value {number} is within the acceptable range")
+        print(f"The value {number} is within the required range")
     
 try:
     number = int(input("Enter number: "))
