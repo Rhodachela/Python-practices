@@ -12,4 +12,4 @@ try:
 except ValueTooHighError as e:
     print(e)
 except ValueError:
-    print("Invalid input. Enter a valid integer.")
+    print("Invalid input. Enter a proper integer.")
