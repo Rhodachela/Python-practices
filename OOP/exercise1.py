@@ -5,7 +5,7 @@ class Student:
         self.tribe = tribe
 
     def display_info(self):
-        naming = f"My name is {self.name}, I am {self.age} years old and I am {self.tribe}."
+        naming = f"My name is {self.name}, I am {self.age} years old and I belong to the {self.tribe}."
         return naming
 
     def play_games(self):
